@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="online.css">
+  <link rel="stylesheet" type="text/css" href="acceso.css">
+  <script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<title></title>
+</head>
+<body>
+
+<div class="contenedor1">
+	<div class="item"><img src="cs.jpg" height="70" width="160"></div>				
+</div>
+
+<div class="contenedor2">
+<div class="row">
+
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Contactanos</h1>
+    </div>
+  </div>
+  <form id="conatacto" name="conatacto" action="#" method="post" onsubmit="return validar()">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <label class="col-md-1 control-label">Nombre</label>
+      <input type="text" class="form-control" name="nombre" id="campo_nombre" />
+    </div>
+  </div>
+<br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <label class="col-md-1 control-label">Email</label>
+      <input type="email" class="form-control" name="nombre" id="campo_email" />
+    </div>
+  </div>
+<br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <label class="col-md-1 control-label">Mensaje</label>
+      <input type="text" class="form-control" name="mensaje" id="mensaje" />
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-md-1 col-md-offset-3">
+      <button type="submit" class="btn btn-info" id="btn_registrarse" >Enviar</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+
+<div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      Acceso Permitido...
+    </p>
+  </div>
+</div> 
+
+
+
+<!--menu-->
+<div class='menu'>
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <div class='menuContent'>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="acceso.html">Acceso</a></li>
+    </ul>
+  </div>
+</div>
+<!--scrip-->
+<script>
+function validar(conatacto){
+  console.log();
+  /**VALIDACIONES**/
+  /**VALIDAR QUE EL CAMPO NOMBRE NO ESTE VACIO**/
+    if ($('#campo_nombre').val() == "") {
+        alert('el campo nombre esta Vacio');
+        return false;
+    }  if ($('#mensaje').val() == "") {
+        alert('No escribio ningun mensaje');
+        return false;
+    }
+     if ($('#campo_email').val() == "") {
+        alert('el campo email esta Vacio');
+        return false;
+    }
+    console.log(campo_email);
+    //var email = $(email).val();
+    var caract = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+ 
+    if (caract.test(campo_email) == false){
+        $(div).hide().removeClass('hide').slideDown('fast');
+        return false;
+    }
+   else{
+      return true;      
+    }
+};
+</script> 
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+    $('.toggle').on('click', function() {
+  $('.menu').toggleClass('active');
+});
+</script>
+</body>
+</html>
