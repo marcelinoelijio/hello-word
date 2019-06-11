@@ -1,8 +1,8 @@
 body {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,1) 49%, rgba(1,0,6,1) 100%);
+  /*background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,1) 49%, rgba(1,0,6,1) 100%);*/
   
-  /*background-image:url(321.PNG);*/
+  background-image:url(cs00.jpg);
     font-family: 'Roboto Condensed', sans-serif;  
   font-size: 16px;
     overflow: hidden;

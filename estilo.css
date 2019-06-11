@@ -18,8 +18,8 @@
   align-content: flex-start;
 }
 .contenedor2{
-  /*background: rgb(53,156,110);
-  background: linear-gradient(45deg, rgba(53,156,110,0.4962184702982756) 0%, rgba(217,235,231,0.24411762996214115) 50%, rgba(53,156,110,0.4962184702982756) 100%);*/
+  background: rgb(53,156,110);
+  background: linear-gradient(45deg, rgba(53,156,110,0.4962184702982756) 0%, rgba(217,235,231,0.24411762996214115) 50%, rgba(53,156,110,0.4962184702982756) 100%);
   width: 80%;
   height: 440px;
   /*background: #FF5C29;*/
